@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/Viliam-Bielik/test.git",
+  "author": "Viliam-Bielik <viliam.bielik@ogilvy.com>",
+  "license": "MIT",
+  "scripts": {
+    "format-check": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "build:dev": "./node_modules/.bin/webpack --mode=development --progress --watch",
+    "server": "npx http-server -c -1",
+    "prepare": "husky install"
+  }
+}
